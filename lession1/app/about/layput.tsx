@@ -1,18 +1,16 @@
-import React from 'react'
+import aboutstyles from './styles.module.css'
 
-function AboutLayput({
-    children,
+export default function AboutLayput({
+  children,
 }: {
-    children: React.ReactNode
+  children: React.ReactNode
 }) {
-    return (
-        <>
-            <nav>About NavBar</nav>
-            <main>
-                {children}
-            </main>
-        </>
-    )
+  return (
+    <>
+      <nav>About NavBar</nav>
+      <main className={aboutstyles.main}>
+        {children}
+      </main>
+    </>
+  )
 }
-
-export default AboutLayput
